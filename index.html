@@ -12,15 +12,25 @@
     <title>Jacek Smoter - fotograf</title>
   </head>
   <body class="body__container">
-    <header>
+    <div class="theme-switch-wrapper">
+      <span>Dark Mode</span>
+      <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+      </label>
+    </div>
+    <header class="">
       <h1 class="line-decoration-1" id="header__title">
-        <a href="index.html">Jacek Smoter</a>
+        <a href="../index.html">Jacek Smoter</a>
       </h1>
-      <nav>
+
+      <nav class="">
         <ul class="header__nav-list header__nav-homepage">
           <li>
             <h2>
-              <a href="pages/gallery-1.html">Wedding / Ślub | Iga & Maciek</a>
+              <a href="pages/gallery-weddingIM.html"
+                >Wedding / Ślub | Iga & Maciek</a
+              >
             </h2>
           </li>
           <li>
@@ -32,20 +42,22 @@
           </li>
           <li>
             <h2>
-              <a href="pages/gallery-3.html"> Theater / Teatr | Kamchàtka</a>
+              <a href="pages/gallery-kamchatka.html">
+                Theater / Teatr | Kamchàtka</a
+              >
             </h2>
           </li>
           <li>
-            <h2><a href="pages/gallery-4.html">Theater / Teatr</a></h2>
+            <h2><a href="pages/gallery-theater.html">Theater / Teatr</a></h2>
           </li>
           <li>
             <h2>
-              <a href="pages/gallery-5.html">Interior / Wnętrza</a>
+              <a href="pages/gallery-interior.html">Interior / Wnętrza</a>
             </h2>
           </li>
           <li>
             <h2>
-              <a href="pages/gallery-6.html">Wedding / Ślub</a>
+              <a href="pages/gallery-wedding.html">Wedding / Ślub</a>
             </h2>
           </li>
           <li>
@@ -53,13 +65,14 @@
               <a href="pages/gallery-people.html">Portraits / Portrety</a>
             </h2>
           </li>
+          <li></li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="section__about">
         <h1 class="line-decoration-2">About / O Mnie</h1>
-        <img id="section__about-image" src="./imgs/IMG_5951.jpg" />
+        <img id="section__about-image" src="./imgs/image-about.jpg" />
         <p>
           <a><u>Click for English</u></a>
         </p>
@@ -102,5 +115,6 @@
         </p>
       </section>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>
