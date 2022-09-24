@@ -7,6 +7,7 @@
 [data-theme="dark"] {
   --black: #fff;
   --white: #000;
+  --green: #008800;
 }
 /* RESET AND GENERAL SETTINGS */
 
@@ -209,6 +210,13 @@ header {
   margin-top: 140px;
 
   z-index: 0;
+
+  -ms-overflow-style: none; /* Edge, Internet Explorer */
+  scrollbar-width: none; /* Firefox */
+}
+
+.image__container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 
 .image__container img {
@@ -231,7 +239,15 @@ header {
   margin-right: 3rem;
 
   overflow-y: scroll;
+
+  -ms-overflow-style: none; /* Edge, Internet Explorer */
+  scrollbar-width: none; /* Firefox */
 }
+
+.section__about::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
 .section__about h1 {
   font-size: 2.618rem;
   width: fit-content;
@@ -359,6 +375,10 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+#contact__info {
+  display: inline-block;
+}
+
 /* Media */
 
 @media screen and (max-width: 1250px) {
@@ -482,8 +502,7 @@ input:checked + .slider:before {
     padding: 0;
     margin-right: 0;
 
-    position: absolute;
-    top: 50%;
+    padding-top: 40vh;
   }
 
   .section__about h1 {
