@@ -216,7 +216,6 @@ header {
 }
 
 .image__container::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
 }
 
 .image__container img {
