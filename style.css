@@ -178,7 +178,7 @@ header h1 {
   background-color: var(--black);
 }
 
-.header__nav-list li:hover > h2 {
+.header__nav-list li:hover > h2 > a {
   color: var(--white);
 }
 
@@ -215,9 +215,6 @@ header {
   scrollbar-width: none; /* Firefox */
 }
 
-.image__container::-webkit-scrollbar {
-}
-
 .image__container img {
   height: 70vh;
   max-width: 100%;
@@ -241,6 +238,7 @@ header {
 
   -ms-overflow-style: none; /* Edge, Internet Explorer */
   scrollbar-width: none; /* Firefox */
+  scroll-behavior: smooth;
 }
 
 .section__about::-webkit-scrollbar {
@@ -263,8 +261,15 @@ header {
   margin-bottom: 0.7rem;
 }
 
-.section__about p a {
+.section__about p,
+a {
+  color: var(--black);
   cursor: pointer;
+}
+
+.section__about-link-separator {
+  color: var(--black);
+  font-size: 1.5rem;
 }
 
 .hidden {
@@ -682,4 +687,8 @@ input:checked + .slider:before {
 
 .menu__item-active {
   background-color: var(--black);
+}
+
+.add-mt {
+  margin-top: 1rem;
 }
